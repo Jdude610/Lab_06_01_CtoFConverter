@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+
+         java.util.Scanner temperature = new Scanner(System.in);
+
+         System.out.print("Enter temperature in Celsius: ");
+if (temperature.hasNextDouble()){
+    double celsius = temperature.nextDouble();
+    double fahrenheit = (celsius * 9.0/5.0) +32;
+    System.out.println();
+    System.out.println("The temperature in Fahrenheit: " + fahrenheit +" F");
+        }else{
+    System.out.println("Invalid input. Please enter a number");
+        }
+    }
